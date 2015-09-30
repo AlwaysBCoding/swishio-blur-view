@@ -1,0 +1,6 @@
+node_modules/**/*
+SwishBlurView.xcodeproj/xcuserdata/**/*
+SwishBlurView.xcodeproj/project.xcworkspace/**/*
+npm-debug.log
+.DS_Store
+
