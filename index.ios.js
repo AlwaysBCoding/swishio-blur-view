@@ -30,16 +30,18 @@ var BlurView = React.createClass({
     var nativeProps = Object.assign({}, this.props, {style: this.props.style})
 
     return (
-      <View
+      <SwishBlurView
         {... nativeProps}
         ref={BLUR_REF}
         blurType={this.props.blurType}>
 
-      </View>
+      {this.props.children}
+
+      </SwishBlurView>
     )
   }
 })
 
-// var SwishBlurView = requireNativeComponent('SwishBlurView', BlurView)
+var SwishBlurView = requireNativeComponent('SwishBlurView', BlurView)
 
 module.exports = BlurView
