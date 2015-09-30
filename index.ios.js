@@ -35,8 +35,6 @@ var BlurView = React.createClass({
         ref={BLUR_REF}
         blurType={this.props.blurType}>
 
-      {this.props.children}
-
       </View>
     )
   }
