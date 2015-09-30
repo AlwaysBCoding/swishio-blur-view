@@ -2,7 +2,7 @@
 
 @class RCTEventDispatcher;
 
-@interface BlurView : UIView
+@interface SwishBlurView : UIView
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher NS_DESIGNATED_INITIALIZER;
 
