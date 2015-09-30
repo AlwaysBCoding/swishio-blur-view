@@ -7,19 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64D21E901BBC658E00D13C7D /* libSwishBlurView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D21E841BBC658D00D13C7D /* libSwishBlurView.a */; };
 		64D21EA01BBC668100D13C7D /* SwishBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D21E9F1BBC668100D13C7D /* SwishBlurView.m */; };
+		64D21EA31BBC66D200D13C7D /* SwishBlurViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D21EA21BBC66D200D13C7D /* SwishBlurViewManager.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		64D21E911BBC658E00D13C7D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 64D21E7C1BBC658D00D13C7D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 64D21E831BBC658D00D13C7D;
-			remoteInfo = SwishBlurView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		64D21E821BBC658D00D13C7D /* CopyFiles */ = {
@@ -35,9 +25,10 @@
 
 /* Begin PBXFileReference section */
 		64D21E841BBC658D00D13C7D /* libSwishBlurView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwishBlurView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		64D21E8F1BBC658E00D13C7D /* SwishBlurViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwishBlurViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D21E9E1BBC668100D13C7D /* SwishBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwishBlurView.h; sourceTree = "<group>"; };
 		64D21E9F1BBC668100D13C7D /* SwishBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwishBlurView.m; sourceTree = "<group>"; };
+		64D21EA11BBC66D200D13C7D /* SwishBlurViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwishBlurViewManager.h; sourceTree = "<group>"; };
+		64D21EA21BBC66D200D13C7D /* SwishBlurViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwishBlurViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,20 +39,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64D21E8C1BBC658E00D13C7D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64D21E901BBC658E00D13C7D /* libSwishBlurView.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		64D21E7B1BBC658D00D13C7D = {
 			isa = PBXGroup;
 			children = (
+				64D21EA11BBC66D200D13C7D /* SwishBlurViewManager.h */,
+				64D21EA21BBC66D200D13C7D /* SwishBlurViewManager.m */,
 				64D21E9E1BBC668100D13C7D /* SwishBlurView.h */,
 				64D21E9F1BBC668100D13C7D /* SwishBlurView.m */,
 				64D21E851BBC658D00D13C7D /* Products */,
@@ -72,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				64D21E841BBC658D00D13C7D /* libSwishBlurView.a */,
-				64D21E8F1BBC658E00D13C7D /* SwishBlurViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,24 +81,6 @@
 			productReference = 64D21E841BBC658D00D13C7D /* libSwishBlurView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		64D21E8E1BBC658E00D13C7D /* SwishBlurViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 64D21E9B1BBC658E00D13C7D /* Build configuration list for PBXNativeTarget "SwishBlurViewTests" */;
-			buildPhases = (
-				64D21E8B1BBC658E00D13C7D /* Sources */,
-				64D21E8C1BBC658E00D13C7D /* Frameworks */,
-				64D21E8D1BBC658E00D13C7D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				64D21E921BBC658E00D13C7D /* PBXTargetDependency */,
-			);
-			name = SwishBlurViewTests;
-			productName = SwishBlurViewTests;
-			productReference = 64D21E8F1BBC658E00D13C7D /* SwishBlurViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -125,9 +91,6 @@
 				ORGANIZATIONNAME = Swish;
 				TargetAttributes = {
 					64D21E831BBC658D00D13C7D = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					64D21E8E1BBC658E00D13C7D = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -145,46 +108,21 @@
 			projectRoot = "";
 			targets = (
 				64D21E831BBC658D00D13C7D /* SwishBlurView */,
-				64D21E8E1BBC658E00D13C7D /* SwishBlurViewTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		64D21E8D1BBC658E00D13C7D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64D21E801BBC658D00D13C7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D21EA31BBC66D200D13C7D /* SwishBlurViewManager.m in Sources */,
 				64D21EA01BBC668100D13C7D /* SwishBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64D21E8B1BBC658E00D13C7D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		64D21E921BBC658E00D13C7D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 64D21E831BBC658D00D13C7D /* SwishBlurView */;
-			targetProxy = 64D21E911BBC658E00D13C7D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		64D21E961BBC658E00D13C7D /* Debug */ = {
@@ -268,6 +206,13 @@
 		64D21E991BBC658E00D13C7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -277,41 +222,16 @@
 		64D21E9A1BBC658E00D13C7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		64D21E9C1BBC658E00D13C7D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwishBlurViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		64D21E9D1BBC658E00D13C7D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwishBlurViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -332,15 +252,6 @@
 			buildConfigurations = (
 				64D21E991BBC658E00D13C7D /* Debug */,
 				64D21E9A1BBC658E00D13C7D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		64D21E9B1BBC658E00D13C7D /* Build configuration list for PBXNativeTarget "SwishBlurViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64D21E9C1BBC658E00D13C7D /* Debug */,
-				64D21E9D1BBC658E00D13C7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
